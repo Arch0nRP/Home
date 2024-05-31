@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font style */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background: #121212; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+.login-container, .content-container {
+    background: #1e1e1e; /* Container background color */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    text-align: center; /* Center the text */
+    max-width: 600px; /* Maximum width for containers */
+    width: 100%; /* Full width for containers */
+    margin: 0 20px; /* Margin for small screens */
+}
+
+input, button {
+    margin: 10px 0; /* Spacing between elements */
+    padding: 10px; /* Element padding */
+    width: calc(100% - 20px); /* Full width elements with padding adjustment */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    background-color: #03dac6; /* Button background color */
+    color: #121212; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #028f81; /* Darker background on hover */
+}
+
+h1 {
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+@media (max-width: 600px) {
+    .login-container, .content-container {
+        width: 80%; /* Responsive width for small screens */
+    }
+}
