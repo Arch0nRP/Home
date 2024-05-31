@@ -2,8 +2,8 @@
 function validateLogin() {
     const username = document.getElementById('username').value; // Get the username input value
     const password = document.getElementById('password').value; // Get the password input value
-    
-    if (username === 'qwerty' && password === 'yuiop') { // Check if credentials match
+
+    if (username === secrets.username && password === secrets.password) { // Check if credentials match
         window.location.href = 'content.html'; // Redirect to content page on success
     } else {
         alert('Incorrect Username or Password'); // Alert on incorrect credentials
