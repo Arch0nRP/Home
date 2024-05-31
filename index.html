@@ -6,50 +6,58 @@
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
+    <script defer src="secrets.js"></script>
     <style>
         body {
-            background-color: #000; /* Black background */
-            color: #fff; /* White text color */
+            background-color: #000;
+            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Full viewport height */
-            margin: 0; /* Remove default margin */
-            font-family: Arial, sans-serif; /* Font style */
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
         .login-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-            padding: 20px; /* Padding inside the container */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
-            width: 90%; /* Width of the container */
-            max-width: 400px; /* Maximum width */
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 300px;
+            width: 100%;
+            margin: 0 20px;
         }
         .login-container input {
-            margin: 10px 0; /* Spacing between inputs */
-            padding: 10px; /* Input padding */
-            width: 100%; /* Full width inputs */
-            border: none; /* Remove border */
-            border-radius: 5px; /* Rounded input corners */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
         }
         .login-container button {
-            margin-top: 10px; /* Margin on top of button */
-            padding: 10px; /* Button padding */
-            width: 100%; /* Full width button */
-            border: none; /* Remove border */
-            border-radius: 5px; /* Rounded button corners */
-            background-color: #03dac6; /* Button background */
-            color: #000; /* Button text color */
-            cursor: pointer; /* Pointer cursor on hover */
-            font-weight: bold; /* Bold text */
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            background-color: #03dac6;
+            color: #000;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-container button:hover {
+            background-color: #028f81;
+        }
+        h1 {
+            margin-bottom: 20px;
         }
     </style>
 </head>
-<body oncontextmenu="return false;"> <!-- Disable right-click -->
+<body oncontextmenu="return false;">
     <div class="login-container">
         <h1>Login</h1>
         <input type="text" id="username" placeholder="Username">
@@ -58,4 +66,3 @@
     </div>
 </body>
 </html>
-
