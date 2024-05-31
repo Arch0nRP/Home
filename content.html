@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-container">
+        <h1>Content Page</h1>
+        <div id="file-content"></div> <!-- Placeholder for file content -->
+    </div>
+    <script>
+        // Fetch the content from the data file and display it
+        fetch('data.txt')
+            .then(response => response.text()) // Get the text from the response
+            .then(data => {
+                document.getElementById('file-content').innerText = data; // Display the data in the div
+            });
+    </script>
+</body>
+</html>
