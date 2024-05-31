@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <style>
+        body {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Font style */
+        }
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+            padding: 20px; /* Padding inside the container */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            width: 90%; /* Width of the container */
+            max-width: 400px; /* Maximum width */
+        }
+        .login-container input {
+            margin: 10px 0; /* Spacing between inputs */
+            padding: 10px; /* Input padding */
+            width: 100%; /* Full width inputs */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded input corners */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .login-container button {
+            margin-top: 10px; /* Margin on top of button */
+            padding: 10px; /* Button padding */
+            width: 100%; /* Full width button */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded button corners */
+            background-color: #03dac6; /* Button background */
+            color: #000; /* Button text color */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-weight: bold; /* Bold text */
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;"> <!-- Disable right-click -->
+    <div class="login-container">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="validateLogin()">Login</button>
+    </div>
+</body>
+</html>
+
